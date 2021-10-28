@@ -1,10 +1,10 @@
 # ci3hmvc-websystempenggajian
 
-# Overview
+## Overview
 
 Web System Penggajian An Example Website For Set Up Payroll System.
 
-# What's Inside
+## What's Inside
 
 - Web System Penggajian
   - User :
@@ -26,7 +26,7 @@ Web System Penggajian An Example Website For Set Up Payroll System.
     - Logout
   - Menus Privilege :
     - Admin : All Menus.
-    - Pegawai : Dashboard, Data Gaji, Ganti Password, Logout.
+    - Pegawai : Dashboard, List Data Gaji, Ganti Password, Logout.
 - PHP v5.2.0
 - Code Igniter 3 With HMVC Pattern
 - Authentication
@@ -37,7 +37,7 @@ Web System Penggajian An Example Website For Set Up Payroll System.
 - Query SQL
 - Many more...
 
-# Installation
+## Installation
 
 - Clone the project to your htdocs directory
 - Configure the Database(application/config/database.php)
@@ -45,8 +45,8 @@ Web System Penggajian An Example Website For Set Up Payroll System.
 - Run Migration with url http://your-hostname/ci3hmvc-websystempenggajian/migration
 - Open file websystempenggajian.sql in the root folder of the project, run it(Query INSERT)
 - Run Web System Penggajian with url http://your-hostname/ci3hmvc-websystempenggajian/login
-- Enjoy Your Time!!!
+- Enjoy Your Time!!! :coffee:
 
-# KnownIssues
+## KnownIssues
 
 - No Issues
