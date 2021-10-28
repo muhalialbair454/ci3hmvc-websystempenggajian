@@ -50,7 +50,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo site_url("pegawai/listdatagaji"); ?>">
                     <i class="fas fa-fw fa-money-check-alt"></i>
-                    <span>Data Gaji</span></a>
+                    <span>List Data Gaji</span></a>
             </li>
 
             <!-- Nav Item - Charts -->
