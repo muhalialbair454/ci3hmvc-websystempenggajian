@@ -41,67 +41,191 @@ Web System Penggajian An Example Website For Set Up Payroll System.
 ```bash
 ├───application
 │   ├───...
+│   ├───...
 │   ├───modules                                      
-│   │   ├───dashboard                                 
+│   │   ├───dashboard
 │   │   │   ├───controllers
+│   │   │   │       Dashboard.php
+│   │   │   │       DashboardPegawai.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MDashboard.php
+│   │   │   │       MDashboardpegawai.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_dashboard.php
+│   │   │           v_dashboardpegawai.php
+│   │   │
 │   │   ├───gantipassword
 │   │   │   ├───config
+│   │   │   │       routes.php
+│   │   │   │
 │   │   │   ├───controllers
+│   │   │   │       GantiPassword.php
+│   │   │   │       GantiPasswordPegawai.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MGantipassword.php
+│   │   │   │       MGantipasswordpegawai.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_gantipassword.php
+│   │   │           v_gantipasswordpegawai.php
+│   │   │
 │   │   ├───home
 │   │   │   ├───controllers
+│   │   │   │       Home.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MHome.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_home.php
+│   │   │
 │   │   ├───laporanabsensi
 │   │   │   ├───controllers
+│   │   │   │       LaporanAbsensi.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MLaporanabsensi.php
+│   │   │   │
 │   │   │   └───views
+│   │   │       │   v_laporanabsensi.php
+│   │   │       │   v_printlaporanabsensi.php
+│   │   │       │
 │   │   │       └───include
+│   │   │               load-script
+│   │   │               load-scripts.php
+│   │   │               load-styles.php
+│   │   │
 │   │   ├───laporangaji
 │   │   │   ├───controllers
+│   │   │   │       LaporanGaji.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_laporangaji.php
+│   │   │
 │   │   ├───listdataabsensi
 │   │   │   ├───controllers
+│   │   │   │       ListDataAbsensi.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MListdataabsensi.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_addlistdataabsensi.php
+│   │   │           v_listdataabsensi.php
+│   │   │
 │   │   ├───listdatagaji
 │   │   │   ├───controllers
+│   │   │   │       ListDataGaji.php
+│   │   │   │       ListDataGajiPegawai.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MListdatagaji.php
+│   │   │   │       MListdatagajipegawai.php
+│   │   │   │
 │   │   │   └───views
+│   │   │       │   v_listdatagaji.php
+│   │   │       │   v_listdatagajipegawai.php
+│   │   │       │   v_printlistdatagaji.php
+│   │   │       │   v_printlistdatagajipegawai.php
+│   │   │       │
 │   │   │       └───include
+│   │   │               load-scripts.php
+│   │   │               load-styles.php
+│   │   │
 │   │   ├───listdatajabatan
 │   │   │   ├───controllers
+│   │   │   │       ListDataJabatan.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MLIstdatajabatan.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_addlistdatajabatan.php
+│   │   │           v_editlistdatajabatan.php
+│   │   │           v_listdatajabatan.php
+│   │   │
 │   │   ├───listdatapegawai
 │   │   │   ├───controllers
+│   │   │   │       ListDataPegawai.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MListdatapegawai.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_addlistdatapegawai.php
+│   │   │           v_editlistdatapegawai.php
+│   │   │           v_listdatapegawai.php
+│   │   │
 │   │   ├───login
 │   │   │   ├───config
+│   │   │   │       routes.php
+│   │   │   │
 │   │   │   ├───controllers
+│   │   │   │       Login.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MLogin.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_login.php
+│   │   │
 │   │   ├───migration
 │   │   │   ├───config
+│   │   │   │       migration.php
+│   │   │   │       routes.php
+│   │   │   │
 │   │   │   ├───controllers
+│   │   │   │       Migration.php
+│   │   │   │
 │   │   │   ├───migrations
+│   │   │   │       001_tbl_data_pegawai.php
+│   │   │   │       002_tbl_data_jabatan.php
+│   │   │   │       003_tbl_data_kehadiran.php
+│   │   │   │       004_tbl_potongan_gaji.php
+│   │   │   │       005_tbl_hak_akses.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_runmigration.php
+│   │   │
 │   │   ├───settingpotongangaji
 │   │   │   ├───controllers
+│   │   │   │       SettingPotonganGaji.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MSettingpotongangaji.php
+│   │   │   │
 │   │   │   └───views
+│   │   │           v_addlistsettingpotongangaji.php
+│   │   │           v_editlistsettingpotongangaji.php
+│   │   │           v_listsettingpotongangaji.php
+│   │   │
 │   │   ├───slipgaji
 │   │   │   ├───controllers
+│   │   │   │       SlipGaji.php
+│   │   │   │
 │   │   │   ├───models
+│   │   │   │       MSlipgaji.php
+│   │   │   │
 │   │   │   └───views
+│   │   │       │   v_printslipgaji.php
+│   │   │       │   v_slipgaji.php
+│   │   │       │
 │   │   │       └───include
+│   │   │               load-scripts.php
+│   │   │               load-styles.php
+│   │   │
 │   │   └───templates
 │   │       ├───controllers
+│   │       │       Templates.php
+│   │       │
 │   │       └───views
+│   │               v_exampletemplates.php
+│   │               v_templatesadmin.php
+│   │               v_templateslogin.php
+│   │               v_templatespegawai.php
 │   ├───...
 ├───assets
 │   ├───...
