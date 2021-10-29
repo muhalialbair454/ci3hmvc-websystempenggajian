@@ -41,7 +41,7 @@ Web System Penggajian An Example Website For Set Up Payroll System.
 ```bash
 ├───application
 │   ├───...
-│   ├───modules                                       # Table of contents
+│   ├───modules                                      
 │   │   ├───dashboard                                 
 │   │   │   ├───controllers
 │   │   │   ├───models
