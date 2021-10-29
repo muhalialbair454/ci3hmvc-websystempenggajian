@@ -71,7 +71,7 @@ $route['pegawai/dashboard'] = "dashboard/DashboardPegawai/dashboardPegawai";
 
 // Routes List Data Gaji
 $route['pegawai/listdatagaji'] = "listdatagaji/ListDataGajiPegawai/listDataGajiPegawai";
-$route['pegawai/printlistdatagaji/(:any)'] = "listdatagaji/ListDataGajiPegawai/printListDataGajiPegawai/$1";
+$route['pegawai/printListDataGajiPegawai/(:any)'] = "listdatagaji/ListDataGajiPegawai/printListDataGajiPegawai/$1";
 
 // Routes Ganti Password
 $route['pegawai/gantipassword'] = "gantipassword/GantiPasswordPegawai/gantiPasswordPegawai";
