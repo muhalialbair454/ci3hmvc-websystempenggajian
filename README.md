@@ -35,18 +35,92 @@ Web System Penggajian An Example Website For Set Up Payroll System.
 - SB Admin 2
 - Bootstrap v4.1.3
 - Query SQL
-- Many more...
+- etc..
 
-## Installation
+## File Structure
+```bash
+├───application
+│   ├───...
+│   ├───modules                                       # Table of contents
+│   │   ├───dashboard                                 
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   ├───gantipassword
+│   │   │   ├───config
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   ├───home
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   ├───laporanabsensi
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   │       └───include
+│   │   ├───laporangaji
+│   │   │   ├───controllers
+│   │   │   └───views
+│   │   ├───listdataabsensi
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   ├───listdatagaji
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   │       └───include
+│   │   ├───listdatajabatan
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   ├───listdatapegawai
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   ├───login
+│   │   │   ├───config
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   ├───migration
+│   │   │   ├───config
+│   │   │   ├───controllers
+│   │   │   ├───migrations
+│   │   │   └───views
+│   │   ├───settingpotongangaji
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   ├───slipgaji
+│   │   │   ├───controllers
+│   │   │   ├───models
+│   │   │   └───views
+│   │   │       └───include
+│   │   └───templates
+│   │       ├───controllers
+│   │       └───views
+│   ├───...
+├───assets
+│   ├───...
+└───system
+    ├───...
+```
+
+
+## Quick Start
 
 - Clone the project to your htdocs directory
 - Configure the Database(application/config/database.php)
-- Configure the config file(application/config/config.php) Configuration
+- Configure the config file(application/config/config.php)
 - Run Migration with url http://your-hostname/ci3hmvc-websystempenggajian/migration
 - Open file websystempenggajian.sql in the root folder of the project, run it(Query INSERT)
 - Run Web System Penggajian with url http://your-hostname/ci3hmvc-websystempenggajian/login
-- Enjoy Your Time!!! :coffee:
+- Login with username & password (Usernames and passwords are on the tbl_data_pegawai)
+- Its :coffee: time!!! 
 
 ## KnownIssues
 
-- No Issues
+- No Issues (Let me know if there are issues).
