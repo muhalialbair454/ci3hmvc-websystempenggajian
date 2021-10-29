@@ -10,16 +10,24 @@
         <h2>Slip Gaji Pegawai</h2>
         <hr style="width: 50%; border-width: 5px; color: black;">
     </center>
-
+    <?php if ((isset($_GET['ddbulan']) && $_GET['ddbulan'] != '') && (isset($_GET['ddtahun']) && $_GET['ddtahun'] != '')) {
+        $bulan = $_GET['ddbulan'];
+        $tahun = $_GET['ddtahun'];
+        $bulantahun = $bulan . $tahun;
+    } else {
+        $bulan = date('m');
+        $tahun = date('Y');
+        $bulantahun = $bulan . $tahun;
+    } ?>
     <?php
-    foreach ($datasettingpotongangaji as $settinganpotongangaji) :
-        $potongan = $settinganpotongangaji->jumlah_potongan;
+    foreach ($getAllSettingPotonganGaji as $allSettingPotonganGaji) :
+        $potongan = $allSettingPotonganGaji->jumlah_potongan;
     // echo "$potongan";
     endforeach; ?>
 
     <?php
     $no = 1;
-    foreach ($dataslipgaji as $slipgaji) : ?>
+    foreach ($getDataSlipGaji as $slipgaji) : ?>
         <?php $potonganGaji = $slipgaji->alpha * $potongan; ?>
         <table style="width: 100%;">
             <tr>

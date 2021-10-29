@@ -34,7 +34,7 @@
                                 <td><?php echo number_format($dataGaji->gaji_pokok + $dataGaji->tunjangan_transport + $dataGaji->uang_makan - $potonganGaji, 0, ",", "."); ?></td>
                                 <td>
                                     <center>
-                                        <a href="<?php echo site_url("pegawai/printdatagaji/" . $dataGaji->id_kehadiran); ?>" class="btn btn-sm btn-primary"><i class="fas fa-print"></i> </a>
+                                        <a href="<?php echo site_url("pegawai/printListDataGajiPegawai/" . $dataGaji->id_kehadiran); ?>" class="btn btn-sm btn-primary"><i class="fas fa-print"></i> </a>
                                     </center>
                                 </td>
                             </tr>

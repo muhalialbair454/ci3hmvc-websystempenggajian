@@ -36,12 +36,15 @@ class ListDataGajiPegawai extends HMVC_Controller
     public function printListDataGajiPegawai($idPegawai)
     {
         $data['title'] = "Cetak Slip Gaji";
-        $data['datasettingpotongangaji'] = $this->MSettingpotongangaji->getAllSettingPotonganGaji();
 
-        $data['dataslipgaji'] = $this->MPegawai->getDataSlipGaji($idPegawai);
+        $data['getAllSettingPotonganGaji'] = $this->MSettingpotongangaji->getAllSettingPotonganGaji();
+        // var_dump($data['getAllSettingPotonganGaji']);
+        // die;
+
+        $data['getDataSlipGaji'] = $this->MListdatagajipegawai->getDataSlipGaji($idPegawai);
         // var_dump($data['dataSlipGaji']);
         // die;
 
-        $this->load->view('v_printslipgaji', $data);
+        $this->load->view("v_printlistdatagajipegawai", $data);
     }
 }
