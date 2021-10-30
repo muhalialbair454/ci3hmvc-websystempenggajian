@@ -13,6 +13,8 @@ $route['translate_uri_dashes'] = FALSE;
 // Routes User Admin
 // Routes Dashboard 
 $route['admin/dashboard'] = 'dashboard/Dashboard/dashboard';
+// Routes Login
+$route['login/dologin'] = 'login/doLogin';
 
 // Routes List Data Pegawai
 $route['admin/listdatapegawai'] = 'listDataPegawai/listDataPegawai/listdatapegawai';
