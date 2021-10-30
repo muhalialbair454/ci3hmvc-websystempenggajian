@@ -57,9 +57,6 @@ Web System Penggajian An Example Website For Set Up Payroll System.
 │   │   │           v_dashboardpegawai.php
 │   │   │
 │   │   ├───gantipassword
-│   │   │   ├───config
-│   │   │   │       routes.php
-│   │   │   │
 │   │   │   ├───controllers
 │   │   │   │       GantiPassword.php
 │   │   │   │       GantiPasswordPegawai.php
